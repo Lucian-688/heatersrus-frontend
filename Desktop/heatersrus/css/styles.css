@@ -1,0 +1,1145 @@
+/*______________________________________________________
+_____________________ INDEX___________________________
+______________________________________________________
+
+*/
+body {
+	margin-top: 210px; /*Note à changer en fonction du header*/
+}
+
+/*CCS du bandeau du Besoin d'appel*/
+#bandeau_appel p {
+	text-align: right;
+	font-size: 0.8em;
+	margin-top: 0.5rem;
+	margin-bottom: 0rem;
+}
+
+#panier_achat p{
+	text-align: right;
+	font-size: 0.8em;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	font-size: 1rem;
+}
+
+@keyframes rubberBand {
+    0%, 100% {
+        transform: scale3d(1, 1, 1);
+    }
+    30%,
+    60% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40%,
+    80% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+}
+
+header {
+	width: 100%;
+	background-color: white;
+}
+
+.marge_aeration {
+	margin-bottom: 30px;
+}
+
+/*Survol des éléments du menu*/
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fd1015;
+}
+
+/*CSS du sous-menu :*/
+.dropdown-item {
+	padding: 0.25rem 0.5rem;
+}
+
+.dropdown-item:hover {
+	color: #fd1015;
+	background-color: white;
+}
+
+/*Changement de couleur du bouton*/
+.btn-outline-danger:hover {
+	color: white;
+	background-color: #fd1015;
+}
+
+
+/*CSS des FORMULAIRES D'ACHAT RAPIDE Fioul et Chaudière*/
+.commande {
+	width: 500px;
+	height: 270px;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.css_h2{
+	background-color: #fd1015;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.formulaire {
+	margin: 5px 0px;
+}
+
+div .phase2 {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.btn-danger {
+	background-color: #fd1015;
+}
+
+
+/*CSS des étapes d'achats et de la réassurance*/
+.etape_achat {
+	height: 95px;
+	display: flex;
+	flex-direction: row;
+	color: black;
+	font-size: 0.8em;
+	background-color: #F5F5F5;
+	border-radius: 10px; 
+	margin:10px 0px;
+	overflow: hidden;
+}
+
+.etape_achat i {
+	font-size: 3em;
+	color: red;
+}
+
+.etape_achat h3 {
+	font-size: 1.5em;
+}
+
+.etape_achat p {
+	margin-bottom: 0px;
+	margin-right: 5px;
+}
+
+.test1, .test2 {
+	margin: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/*CSS pour le défilement de la barre d'achat*/
+
+.defilement2 {                               
+  	display: flex;
+  	padding-left: 100%;                                     
+  	animation: 25s linear 0s normal none infinite defilement;
+}
+
+@keyframes defilement {
+  	0% {
+  		transform: translate(0);
+  	}
+	100% {
+		transform: translate(-2600px);
+	}
+}
+
+
+/*CSS pour la partie entreprise*/
+
+.titre_societe h3{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.etape_societe, .etape_societe2 {
+	margin: auto;
+	margin-top: 10px;
+}
+
+.etape_societe a:hover, .etape_societe2 a:hover {
+	color: red;
+}
+
+.etape_societe img{
+	float: right;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.etape_societe2 img{
+	float: left;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.etape_societe p, .etape_societe2 p{
+	text-align: justify;
+	font-size: 0.8rem;
+}
+
+.etape_societe h4, .etape_societe2 h4{
+	font-size: 1.2rem;
+}
+
+
+/*CSS pour les avis clients*/
+.avis_produit h3{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.carousel-indicators li {
+	background-color: black; 
+}
+
+.carousel-caption {
+	background-color: rgba(254, 248, 245, 0.5);
+}
+
+.carousel-caption h4 {
+	font-size: 1.2rem;
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+.carousel-caption h4, .carousel-caption p, .carousel-caption em, .carousel-caption i{
+	color: black;
+}
+.carousel-caption .jaune{
+	color: orange;
+	text-align: right;
+}
+
+.carousel-caption i, .carousel-caption p {
+	font-size: 0.8em;
+}
+
+.carousel-caption p {
+	margin-bottom: 0px;
+}
+
+.carousel-caption em {
+	font-style: italic;
+}
+
+.position_p_left {
+	text-align: left;
+	font-weight: bold;
+}
+
+.position_p_right {
+	text-align: right;
+}
+
+.encadre_avis {
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+}
+
+.carousel-control-next-icon i, .carousel-control-prev-icon i {
+	font-size: 1.5rem;
+	color: rgb(146, 144, 144);
+}
+
+.carousel-item img {
+	margin: auto;
+}
+
+/*CSS pour la forme de les parties Actualité et Produits service*/
+div .phase3 {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.couleur_fond {
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	margin: 10px 0px;
+	padding-bottom: 5px; 
+}
+
+/*CSS pour la partie Actualité*/
+
+.titre_actualite h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.titre_actualite h3 a{
+	color:#000;
+}
+
+.titre_actualite h3 a:hover{
+	text-decoration: none;
+	color:#fd1015;
+}
+
+.etape_actualite {
+	height: 125px;
+	margin: 0 auto;
+	margin-top: 5px;
+	overflow: hidden;
+	box-shadow: 10px 5px 5px grey;
+}
+
+.etape_actualite a{
+	text-decoration: none;
+	color: black;
+}
+
+.etape_actualite p {
+ 	font-size: 0.8rem;
+}
+
+.etape_actualite span {
+ 	font-style: italic;
+}
+
+.etape_actualite a:hover{
+	color: #fd1015;
+}
+
+.etape_actualite h4{
+	font-size: 1.2rem;
+}
+
+.etape_actualite img {
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+/*CSS pour la partie Produits et Services*/
+
+.titre_produit_service h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.etape_produit_service p{
+	font-size: 0.8rem;
+	color: white;
+	background-color: rgba(253, 16,21,1);
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.etape_produit_service img{
+	border-radius: 5px;
+}
+
+
+/*CSS pour le FOOTER*/
+footer a {
+	color:#000;
+}
+
+footer a:hover {
+	color:#fd1015;
+	text-decoration: none;
+}
+
+.logo p {
+	font-weight: bold;
+	margin: auto;
+}
+
+.logo img {
+	float: left;
+}
+
+#footer-font {
+	font-size: .8rem;
+}
+
+.btn-rouge {
+  color: #fd1015;
+  background-color:#fff ;
+  border-color: #fd1015;
+  border-radius: 0.25rem;
+}
+
+.btn-rouge:hover {
+	background-color:#fd1015;
+	color:#fff;
+	border-color: #fd1015;
+}
+
+/*CSS pour les Modals Bootstrap*/
+.modal-header {
+	background-color: #fd1015;
+}
+
+.btn-secondary, .btn-primary {
+	background-color: #fd1015;
+	color: white;
+	border: none;
+}
+
+span.lecture_cgu {
+	font-size: 0.8rem;
+}
+
+
+/*CSS pour l'accordeon du footer en Responsive*/
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid lightgrey;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.accordion button {
+	background-color: white;
+    border: none;
+}
+
+.panel {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+/*______________________________________________________
+_____________________ACHAT FIOUL________________________
+______________________________________________________
+
+*/
+
+/*CSS de l'introduciton de page*/
+
+.titre_page {
+	background-color: rgba(253,16,21,0.9);
+	color: white;
+}
+
+.sexe {
+	padding: 0px;
+}
+
+.case_a_cocher {
+	margin-top: 5px;
+}
+
+.mini_header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ligne {
+	height: 1px;
+	background-color: black;
+	margin-top: 15px;
+}
+
+.btn-rouge:focus{
+	outline: none;	
+}
+
+
+/*CSS des parties DEVIS, INFORMATIONS et COMMANDE*/
+
+/*CSS pour l'évolution des prix du fioul*/
+
+#image_evolution_prix {
+	text-align: center;
+}
+
+.ligne2 {
+	height: 10px;
+	background-color: #f97e02;
+	margin-top: 15px;
+}
+
+.ligne3 {
+	height: 10px;
+	background-color: #0060a8;
+	margin-top: 15px;
+}
+
+/*CSS pour les avis des clients*/
+.contour_commentaire{
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+.jaune {
+	color: orange;
+}
+
+
+
+/*______________________________________________________
+_________________FOIRE AUX QUESTIONS (FAQ)_____________
+_______________________________________________________
+
+*/
+
+.titre_faq, li .accordion{
+	list-style: none;
+	background-color: #F5F5F5;
+}
+
+.titre_faq:hover, li .accordion:hover {
+	background-color: #fd1015;
+	color: black;
+}
+
+div .panel {
+	text-align: justify;
+	padding: 5px;
+	color: black;
+}
+
+.suppression_padding {
+	padding: 0px;
+}
+
+.retour_haut_page {
+	width: 230px;
+	height: 50px;
+	background-color: #fd1015;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding-top: 10px;
+}
+.retour_haut_page:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.reduction_typo {
+	font-size: 1.2rem;
+}
+
+
+
+
+/*______________________________________________________
+____________CONDITIONS GENERALES DE VENTE_______________
+_______________________________________________________
+
+*/
+
+.contenu_cgv h3{
+	font-size: 1.5rem;
+}
+
+.contenu_cgv p{
+	text-align: justify;
+}
+
+.contenu_cgv h4{
+	font-size: 1.2rem;
+}
+
+.contenu_cgv span{
+	font-weight: bold;
+}
+
+
+
+/*______________________________________________________
+____________MENTIONS LEGALES_______________
+_______________________________________________________
+
+*/
+
+.contenu_mentions_legales h3{
+	font-size: 1.5rem;
+}
+
+.contenu_mentions_legales h4{
+	font-size: 1.2rem;
+}
+
+.contenu_mentions_legales p{
+	text-align: justify;
+}
+
+
+
+
+/*______________________________________________________
+_________________DONNEES PERSONNELLES___________________
+_______________________________________________________
+
+*/
+
+
+
+.contenu_donnees_personnelles h3{
+	font-size: 1.5rem;
+}
+
+.contenu_donnees_personnelles p{
+	text-align: justify;
+}
+
+
+
+/*______________________________________________________
+______________________COOKIES___________________________
+_______________________________________________________
+
+*/
+
+.contenu_cookies h3{
+	font-size: 1.5rem;
+}
+
+.contenu_cookies p{
+	text-align: justify;
+}
+
+.tableau_cookies, .tableau_cookies tr, .tableau_cookies td {
+	border: 1px solid lightgrey;
+	text-align: center;
+}
+
+.tableau_cookies {
+	margin-bottom: 20px;
+}
+
+.titre_tableau {
+	font-style: italic;
+}
+
+
+
+/*______________________________________________________
+________________COMMENT CA MARCHE_______________________
+_______________________________________________________
+
+*/
+.retour_haut_page:focus{
+	outline: none;	
+}
+
+.tab-pane {
+	text-align: justify;
+}
+
+.lien_cliquable:hover {
+	text-decoration: none;
+}
+
+.test2_hover:hover {
+	color: #fd1015;
+}
+
+.marge_interne {
+	padding: 15px;
+}
+
+.padding_paragraphe {
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+
+
+
+/*......................Cards...................*/
+
+/*.........Favorite Button Animation............*/
+
+
+
+
+.heart{
+
+	color: #f44336;
+	font-size: 30px;
+	
+	border: .5px solid lightgrey;
+	border-radius: 5px;
+	
+}
+
+.heart-grey{  
+	color: grey;
+	font-size: 30px;
+	
+	border: .5px solid lightgrey;
+	border-radius: 5px;
+	}
+
+
+
+.text-btn-card{
+font-size: 15px
+
+
+}
+
+/* stars     */
+
+
+.rating{
+
+	color:#eec730;
+	display:flex;
+	padding:.5em;
+
+}
+
+
+.rating-filter:hover{
+color:#fff;
+}
+
+.text-avis{
+
+	font-size: 15px;
+	color:grey;
+	margin: 0;
+
+}
+
+
+/*................. page societe...............*/
+
+/*header*/
+
+
+
+.titre_page {
+	background-color: rgba(253,16,21,0.9);
+	color: white;
+}
+
+.banner{
+	height: 400px;
+	text-align: center;
+	background-size: cover;
+}
+.banner-pl{background: url('../images/achat-plomberie.jpg') center center transparent no-repeat;border-radius: 5px;}
+.banner-ch{background: url('../images/achat-chaudiere.jpg') center top transparent no-repeat;border-radius: 5px;}
+.banner-societe{background: url('../images/header-about-us.jpg') center center transparent no-repeat;border-radius: 5px;}
+.banner-contact{background: url('../images/contact-2.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-actu{background: url('../images/actu.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-1{background: url('../images/article-1.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-2{background: url('../images/article-2.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-3{background: url('../images/article-3.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-4{background: url('../images/article-4.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-5{background: url('../images/article-5.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-6{background: url('../images/article-6.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-7{background: url('../images/article-7.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-8{background: url('../images/article-8.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-9{background: url('../images/article-9.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-10{background: url('../images/article-10.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-11{background: url('../images/article-11.jpeg') center center transparent no-repeat;border-radius: 5px;}
+.banner-art-12{background: url('../images/article-12.jpeg') center center transparent no-repeat;border-radius: 5px;}
+
+
+/*Cartes*/
+
+
+
+.card-shadow{
+	box-shadow: 10px 5px 5px grey;
+}
+
+
+
+
+.carte{
+
+	margin: 25px 0;
+	padding: 25px 0;
+	align-items: center;
+	text-align: center;
+
+
+}
+
+.carte-societe{
+	box-shadow: 10px 5px 5px grey;
+}
+
+@media screen and (max-width: 768px) {
+    .carte-societe {
+        box-shadow: none;
+    }
+}
+
+
+
+
+.icon{
+
+	color:#fd1015;
+}
+
+
+/*.........Contact Form........*/
+
+.Formulaire{
+
+	max-width: 1140px;
+	padding-right: 15px;
+   	padding-left: 15px;
+   	margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+
+
+}
+
+
+.form-head{
+	color: #fff;
+	background: #fd1015;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.texte_gras {
+font-weight: bold;
+}
+
+.contact{background: url('../images/contact-1.jpeg') center center transparent no-repeat;}
+
+/*....................Filtre..........................*/
+
+
+
+
+
+
+/*.........Button Rotate...........*/
+
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+/*.....Filtre css.......*/
+
+
+.filtre{
+
+ font-size: 10px;
+ background: #fff;
+
+
+}
+
+.filtre-head{
+
+font-size: 20px;
+color: #fd1015;
+font-weight: bold;
+}
+
+
+.accordion{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid lightgrey;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.accordion button {
+	background-color: white;
+    border: none;
+}
+
+
+.accordion h4{
+font-size: 90px;
+
+
+} 
+
+
+
+
+/* Accordion addition trial */
+
+
+.panel{
+		padding: 0 18px;
+    	background-color: white;
+    	display: none;
+    	overflow: hidden;
+    	border: none;
+	}
+.panel button{
+		
+    	border: none;
+	}
+
+.titre_filtre{
+ font-size: .8rem;
+
+}
+
+.titre_filtre, .btn-filtre .accordion{
+
+	background-color: #F5F5F5;
+}
+
+.titre_filtre:hover, .btn-filtre .accordion:hover {
+	background-color: #fd1015;
+	color: white;
+}
+
+div .panel button {
+	text-align: justify;
+	padding: 5px;
+	color: black;
+	background-color: #fff;
+}
+
+div .filter:hover {
+	color: white;
+	background-color: #fd1015;
+}
+
+
+/* End accordian*/
+
+
+/* Article*/
+
+.article{
+
+background-color: #fff;
+margin: 0 auto; 
+
+
+}
+
+.article > p{
+
+background-color: #fff;
+margin: 0 auto; 
+
+
+
+}
+
+.article-title{
+
+	background: #fff;
+	color:#000;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.article-shadow{
+	box-shadow: 5px 5px 5px 5px grey;
+	margin-bottom: 30px;
+}
+
+.sous-titre-art{
+	
+	font-weight: bold;
+	color:#fd1015; 
+	font-size: 20px;
+
+}
+ .red:hover{
+ 	color:#fd1015; 
+
+ }
+
+ .link-style-none{
+ 	color:#212529;
+
+	text-decoration:none;	
+ }
+
+
+
+/*......... Blog.........    */
+
+.text-red{
+ color:#fff;
+
+}
+
+.text-red:hover{
+
+	color:#f44336;
+}
+
+
+
+.card-bg{
+	background-color: rgba(253,16,21,0.5);
+
+}
+
+.bg-red{
+	background-color:#f44336;
+}
+
+.bg-red:hover{
+	background-color:#fff;
+}
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
